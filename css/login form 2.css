@@ -1,0 +1,139 @@
+/* Tema Gelap */
+
+.login100-form-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input100 {
+  background-color: #444444;
+  color: #ffffff;
+  border: 1px solid #666666;
+  border-radius: 20px;
+  padding: 12px 40px;
+  margin-bottom: 20px;
+  width: 320px;
+  box-sizing: border-box;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-size: 15px;
+  box-shadow: 0 2px 4px rgba(255, 111, 111, 0.1);
+}
+
+.input100:focus {
+  background-color: #555555;
+  border-color: #888888;
+  animation: input-focus 0.2s forwards;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.input100::placeholder {
+  color: #999999;
+}
+
+.login100-form-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 12px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  width: 100%;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.login100-form-btn:hover {
+  background-color: #260404;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.login100-form-btn:active {
+  transform: translateY(0);
+}
+
+.login100-form-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(27, 28, 30, 0.5);
+}
+
+.txt1,
+.txt2,
+.txt3 {
+  color: #cccccc;
+  font-size: 14px;
+  margin-top: 15px;
+  font-weight: 400;
+}
+
+.txt1 a,
+.txt2 a,
+.txt3 a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.txt1 a:hover,
+.txt2 a:hover,
+.txt3 a:hover {
+  text-decoration: underline;
+}
+
+.txt1 a::after,
+.txt2 a::after,
+.txt3 a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #007bff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.txt1 a:hover::after,
+.txt2 a:hover::after,
+.txt3 a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form.input100 {
+  text-align: center;
+}
+
+.logo-btn:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* add a slight background color on hover */
+}
+
+.logo-btn:active {
+  background-color: rgba(
+    255,
+    97,
+    97,
+    0.2
+  ); /* add a slight background color on active */
+}
+
+  
+
+

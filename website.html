@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/website.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="brand">Touhou Project</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div>
+        <div class="navigation-items">
+          <a href="#">Home</a>
+          <a href="biodata.html">About</a>
+          <a href="#">List</a>
+          <a href="#">Gallery</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+    </header>
+
+    <section class="home">
+      <video class="video-slide" src="assets/video/reimu vs marisa.mp4" autoplay muted loop></video>
+       <video class="video-slide" src="assets/video/flandre.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="assets/video/rumia.mp4" autoplay muted loop></video>
+         <video class="video-slide" src="assets/video/patchouli.mp4" autoplay muted loop></video>
+          <video class="video-slide" src="assets/video/tenshi.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1>What is Touhou<br /><span>Project?</span></h1>
+        <p>
+The Touhou Project is a series of Japanese bullet hell shooter video games created by Team Shanghai Alice, with sole member ZUN (Jun'ya Ota) responsible for the programming, graphics, music, and storyline. The series is known for its high difficulty level, intricate patterns of projectiles, and rich, complex lore. The Touhou Project stands out for its combination of challenging gameplay, rich world-building, memorable music, and vibrant fan community        </p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="content">
+        <h1>Touhou Project<br /><span>Music</span></h1>
+        <p>
+Touhou Project music refers to the soundtrack composed for the Touhou Project, a series of bullet hell shooter games created by Japanese game developer Team Shanghai Alice, which is essentially a one-man project led by Jun'ya Ota, also known as ZUN. The music is known for its unique blend of classical, rock, jazz, and electronic influences, and it plays a significant role in the games' overall atmosphere and storytelling.      </p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="content">
+        <h1>Touhou Project<br /><span>Artstyle</span></h1>
+        <p>
+The Touhou Project's art style is distinctive and has evolved over time, reflecting the personal touch of its creator, Jun'ya Ota (ZUN). Here’s an overview of its key characteristics and evolution:
+
+Early Art Style
+In the earlier games of the Touhou series, particularly the PC-98 era (the first five games), the art was relatively simple and rough around the edges. This was due to the limited graphical capabilities of the PC-98 platform and ZUN’s self-taught art skills.
+
+Windows Era Art Style
+With the transition to Windows-based games starting from "Embodiment of Scarlet Devil" (Touhou 6), the art style began to develop more distinct characteristics:     </p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="content">
+        <h1>Missing Touhou<br /><span>Game?</span></h1>
+        <p>
+Touhou game refers to Touhou 7.5: Immaterial and Missing Power. It's a fighting game developed by Team Shanghai Alice and Twilight Frontier. This game is different from the mainline Touhou games, which are typically bullet hell shooters. Immaterial and Missing Power features a unique blend of fighting and shooting mechanics, with characters and themes from the Touhou Project series. It was initially released in 2004 and is notable for its multiplayer mode and story-driven single-player campaigns.     </p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="content">
+        <h1>The Creator<br /><span>Zun</span></h1>
+        <p>
+The creator of the Touhou Project is Jun'ya Ōta, who is more commonly known by his pseudonym, ZUN. He is the sole member of the dōjin game development team Shanghai Alice. ZUN is responsible for the game's design, programming, artwork, and music. The Touhou Project is renowned for its intricate bullet-hell gameplay, compelling characters, and richly detailed world. ZUN's dedication and unique vision have garnered a significant following for the series.
+
+
+
+
+
+
+      </p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="media-icons">
+        <a href="https://www.facebook.com/profile.php?id=100073299825665"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/hairun_pagat/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/HairunRasyid"><i class="fab fa-twitter"></i></a>
+        </a>
+        </div>
+        <div class="slider-navigation">
+
+          <div class="nav-btn active"></div>
+           <div class="nav-btn"></div>
+             <div class="nav-btn"></div>
+              <div class="nav-btn"></div>
+               <div class="nav-btn"></div>
+              
+      </div>
+    </section>
+
+  <script type="text/javascript">
+     document.addEventListener('DOMContentLoaded', (event) => {
+    let slides = document.querySelectorAll('.video-slide');
+    let btns = document.querySelectorAll('.nav-btn');
+    let contents = document.querySelectorAll('.content');
+    let currentSlide = 0;
+
+    const manualNav = function(manual) {
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+      });
+      contents.forEach((content) => {
+        content.classList.remove('active');
+      });
+      btns.forEach((btn) => {
+        btn.classList.remove('active');
+      });
+
+      slides[manual].classList.add('active');
+      contents[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    };
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener('click', () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+
+    // Inisialisasi slide pertama
+    manualNav(currentSlide);
+  });
+
+  
+
+        
+  </script>
+  </body>
+</html>

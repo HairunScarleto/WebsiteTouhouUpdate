@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="./css/login form 2.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="jquery/jquery-3.7.1.min.js"></script>
+    <script src="js/loginform2.js"></script>
+  </head>
+  <style>
+
+  /*css untuk gambar di taruh internal*/
+
+  
+    body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 16px;
+  line-height: 1.5;
+  background: url("./assets/bg3.jpg");
+  background-repeat: no-repeat;
+  
+}
+
+.container-login100 {
+
+        border: 2px solid transparent; /* Add a transparent border */
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(30, 28, 28, 0.8)
+  ),
+  url("./assets/1125262.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container-login100::before {
+  
+  content: "\f007"; 
+  font-family: "Font Awesome 5 Free";
+  font-size: 1px;
+  color: #ffffff;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: url("./assets/remilia\ 2.jpg");
+  background-size: contain;
+  border-radius: 50%;
+}
+
+
+.logo-btn {
+  color: #ffffff; 
+
+  background-color: transparent; 
+  border: none; 
+  padding: 10px; 
+  cursor: pointer; 
+}
+
+
+  </style>
+  <body>
+  
+    <div class="container-login100">
+    
+      <h2 class="login100-form-title">Welcome Back!</h2>
+      <form>
+        <input class="input100" type="text" placeholder="Username" required />
+        <input
+          class="input100"
+          type="password"
+          placeholder="Password"
+          required
+        />
+        <div class="text-right p-t-13 p-b-23">
+          <span class="txt1"> Forgot </span>
+
+          <a href="#" class="txt2"> Username / Password? </a>
+        </div>
+        <button class="login100-form-btn" type="submit">Login</button>
+      </form>
+      <p class="txt1">Don't have an account? <a href="#">Sign up</a></p>
+      <p>or sign up with:</p>
+
+      <div class="logo">
+       <button class="logo-btn">
+        
+    <i class="bx bxl-facebook-circle"></i>
+  </button>
+  <button class="logo-btn">
+    <i class="bx bxl-google"></i>
+  </button>
+  <button class="logo-btn">
+    <i class="bx bxl-twitter"></i>
+  </button>
+  <button class="logo-btn">
+    <i class="bx bxl-github"></i>
+      </div>
+    </div>
+  </body>
+</html>
