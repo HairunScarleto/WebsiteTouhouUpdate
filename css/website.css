@@ -71,7 +71,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: #b5b963;
+  background: #20211d;
 }
 .home::before {
   z-index: 777;
